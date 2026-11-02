@@ -1,0 +1,27 @@
+{
+  "selection_source": "development_only",
+  "configuration": "distill_main",
+  "checkpoint": "results/recovery_20261101/distill_main/checkpoint.pt",
+  "checkpoint_sha256": "8443a4c4c8e3c81c791f870ba4b69ab6989bee90a5193ea6ca90f015131c71c6",
+  "tokenizer": "results/e1_native_output_20260928/tokenizer256/tokenizer.json",
+  "written_utc": "2026-11-01T18:04:37.064814Z",
+  "rule": {
+    "written_utc": "2026-11-01T18:10Z",
+    "written_before": "distill_main_3m DEV results and any TEST result",
+    "eligible": [
+      "distill_main",
+      "distill_main_3m"
+    ],
+    "not_eligible": {
+      "distill_ce_only": "ablation",
+      "naive256": "baseline",
+      "native_lora": "native-tokenizer control"
+    },
+    "metric": "mean over five DEV tasks of (candidate - frozen_native) in points: belebele_hi exact, belebele_en exact, exact_details reference-contained, diverse_copy_hi reference-contained, xquad_hi token F1",
+    "tie_break": "within 0.5 points -> smaller training budget",
+    "test_suite": "results/recovery_20261101/suites/test2588.jsonl (sha256 prefix 4c6a6ff22d501423)",
+    "test_runs_once": true
+  },
+  "amendment": "distill_main_3m was not trained before TEST because the shared GPU lost capacity; distill_main is the only eligible candidate. 3M is reported as a DEV-only budget ablation.",
+  "dev_summary_at_selection": "belebele_hi 118/176 vs frozen 110; belebele_en 173/184 vs 171; exact_details contained 112/112 vs 112; diverse_copy contained 89/150 vs 121 (xquad pending)"
+}

@@ -1,0 +1,47 @@
+{
+  "distill": {
+    "native_tokens": 1499641,
+    "sequences": 2061,
+    "optimizer_updates": 258,
+    "trainable_parameters": 34340864,
+    "minutes": 43.6,
+    "peak_gpu_gib": 8.5,
+    "checkpoint_sha256": "8443a4c4c8e3c81c791f870ba4b69ab6989bee90a5193ea6ca90f015131c71c6"
+  },
+  "ce-only": {
+    "native_tokens": 1499641,
+    "sequences": 2061,
+    "optimizer_updates": 258,
+    "trainable_parameters": 34340864,
+    "minutes": 32.6,
+    "peak_gpu_gib": 8.4,
+    "checkpoint_sha256": "79e47d3260f797eda489c7b243bbd1588a8ff5b7269a272fd360a904770bc076"
+  },
+  "distill-3m": {
+    "native_tokens": 2922217,
+    "sequences": 4000,
+    "optimizer_updates": 500,
+    "trainable_parameters": 34340864,
+    "minutes": 63.8,
+    "peak_gpu_gib": 8.5,
+    "checkpoint_sha256": "3ea9363b6c713851a047833aa26358a7d7d821b96adbfd0ac52445c23f1fd54d"
+  },
+  "naive": {
+    "native_tokens": 999998,
+    "sequences": 2293,
+    "optimizer_updates": 287,
+    "trainable_parameters": 983040,
+    "minutes": 20.9,
+    "peak_gpu_gib": 7.8,
+    "checkpoint_sha256": "5eb8d47542713d4d1c4d3ff59b581a5c502f97ab26e76c3fd58644f905853ebc"
+  },
+  "native-lora": {
+    "native_tokens": 999998,
+    "sequences": 2293,
+    "optimizer_updates": 287,
+    "trainable_parameters": 33030144,
+    "minutes": 35.4,
+    "peak_gpu_gib": 8.3,
+    "checkpoint_sha256": "fcf2dd8f4e81eef70daad478872699da674764008796ca284ef2bbc942ccb8e2"
+  }
+}

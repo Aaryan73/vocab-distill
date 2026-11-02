@@ -1,0 +1,116 @@
+{
+  "distill": {
+    "belebele_en": {
+      "items": 716,
+      "prompt_token_reduction": 0.0,
+      "strict": {
+        "correct": 640,
+        "control_correct": 639,
+        "difference_points": 0.14,
+        "ci95": [
+          -0.42,
+          0.82
+        ],
+        "lost": 2,
+        "gained": 3,
+        "mcnemar_p": 1.0
+      },
+      "content": {
+        "correct": 640,
+        "control_correct": 640,
+        "difference_points": 0.0,
+        "ci95": [
+          -0.56,
+          0.56
+        ],
+        "lost": 2,
+        "gained": 2,
+        "mcnemar_p": 1.0
+      }
+    },
+    "belebele_hi": {
+      "items": 724,
+      "prompt_token_reduction": 0.34052841298867564,
+      "strict": {
+        "correct": 491,
+        "control_correct": 459,
+        "difference_points": 4.42,
+        "ci95": [
+          1.4,
+          7.46
+        ],
+        "lost": 46,
+        "gained": 78,
+        "mcnemar_p": 0.005161224901988027
+      },
+      "content": {
+        "correct": 491,
+        "control_correct": 505,
+        "difference_points": -1.93,
+        "ci95": [
+          -4.49,
+          0.55
+        ],
+        "lost": 54,
+        "gained": 40,
+        "mcnemar_p": 0.17966501480803043
+      }
+    },
+    "diverse_copy_hi": {
+      "items": 150,
+      "prompt_token_reduction": 0.31672232211661955,
+      "strict": {
+        "correct": 90,
+        "control_correct": 84,
+        "difference_points": 4.0,
+        "ci95": [
+          -6.67,
+          14.67
+        ],
+        "lost": 28,
+        "gained": 34,
+        "mcnemar_p": 0.5257733601756501
+      },
+      "content": {
+        "correct": 92,
+        "control_correct": 121,
+        "difference_points": -19.33,
+        "ci95": [
+          -27.33,
+          -11.33
+        ],
+        "lost": 37,
+        "gained": 8,
+        "mcnemar_p": 1.5374090196473844e-05
+      }
+    },
+    "xquad_hi": {
+      "items": 998,
+      "prompt_token_reduction": 0.35167894603396543,
+      "strict": {
+        "correct": 206,
+        "control_correct": 82,
+        "difference_points": 12.42,
+        "ci95": [
+          10.03,
+          14.95
+        ],
+        "lost": 12,
+        "gained": 136,
+        "mcnemar_p": 8.95281620858886e-28
+      },
+      "content": {
+        "correct": 707,
+        "control_correct": 757,
+        "difference_points": -5.01,
+        "ci95": [
+          -7.53,
+          -2.54
+        ],
+        "lost": 93,
+        "gained": 43,
+        "mcnemar_p": 2.1689685390858223e-05
+      }
+    }
+  }
+}

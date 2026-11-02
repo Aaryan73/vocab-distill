@@ -1,0 +1,9 @@
+# Versions used for the paper's runs (one H100, CUDA 12.8).
+torch==2.11.0
+transformers==5.12.1
+peft==0.20.0
+tokenizers==0.22.2
+numpy>=2.0
+# Only for scripts/prepare_data.py and the tests
+datasets
+pytest
